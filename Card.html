@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50">
+    <div class="bg-black text-white text-xs py-2 text-center font-medium">
+      Free delivery on orders over $60
+    </div>
+    <input type="checkbox" id="mobile-menu" class="peer/mobile hidden"/>
+    <label
+      for="mobile-menu"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden peer-checked/mobile:block lg:hidden cursor-pointer"
+    ></label>
+
+
+    <div
+      class="fixed top-0 left-0 w-64 h-full bg-white z-50 transform -translate-x-full peer-checked/mobile:translate-x-0 transition-transform duration-300 lg:hidden shadow-xl flex flex-col"
+    >
+      <div class="p-5 flex justify-between items-center border-b">
+        <a href="#" class="text-3xl font-black text-gray-900 tracking-tighter"
+          >Ogani</a
+        >
+        <label
+          for="mobile-menu"
+          class="cursor-pointer text-gray-500 hover:text-[#7fad39]"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </label>
+      </div>
+      <div class="p-5 space-y-4">
+      
+        <a href="#" class="block font-bold text-gray-800 hover:text-[#7fad39]">Home</a>
+        <a href="#" class="block font-bold text-gray-800 hover:text-[#7fad39]">Shop</a>
+        <a href="#" class="block font-bold text-gray-800 hover:text-[#7fad39]">Pages</a
+        >
+        <a href="#" class="block font-bold text-gray-800 hover:text-[#7fad39]">Blog</a>
+        <a href="#" class="block font-bold text-gray-800 hover:text-[#7fad39]"
+          >Contact</a>
+      </div>
+      <div class="p-5 border-t text-sm mt-auto">
+        <p class="text-gray-500 mb-2">Support 24/7</p>
+        <p class="font-bold text-lg">+1 650 253 0000</p>
+      </div>
+    </div>
+
+    <header class="w-full bg-white">
+  
+      <div class="bg-[#222222] text-[#b2b2b2] text-[13px] py-2.5">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+          <div class="w-full text-center hidden md:block">
+            Not fresh on arrival? We refund it, no return needed
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-6">
+          <div class="flex items-center gap-4 lg:w-1/4">
+            <label
+              for="mobile-menu"
+              class="lg:hidden cursor-pointer text-gray-700 bg-gray-100 p-2 rounded"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+            <a
+              href="#"
+              class="text-4xl font-black text-gray-900 tracking-tighter"
+              >Ogani</a
+            >
+          </div>
+          <nav
+            class="hidden lg:flex items-center gap-10 font-bold text-gray-800 tracking-wide flex-1 justify-center"
+          >
+          </nav>
+
+
+          <div
+            class="flex items-center gap-6 lg:w-1/4 justify-end text-gray-800"
+          >
+            <a href="#" class="hover:text-[#7fad39] transition-colors">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#7fad39] transition-colors relative">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#7fad39] transition-colors">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="hover:text-[#7fad39] transition-colors relative">
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container mx-auto px-4 pb-4">
+        <div class="flex flex-col lg:flex-row gap-6 items-center">
+        
+          <div class="w-full lg:w-[260px] relative">
+            <input type="checkbox" id="dept-toggle" class="peer hidden" />
+
+            <label
+              for="dept-toggle"
+              class="bg-[#7fad39] text-white px-5 py-3.5 flex items-center justify-between cursor-pointer font-bold select-none group"
+            >
+              <div class="flex items-center gap-3">
+                <svg
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+                <span class="tracking-wide">All departments</span>
+              </div>
+              <svg
+                class="w-4 h-4 transition-transform peer-checked:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </label>
+
+            
+            <div
+              class="absolute top-full left-0 w-full bg-white border border-gray-200 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-200 z-50"
+            >
+              <ul class="py-2 text-[15px]">
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Fresh vegetables</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Fruit & berries</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Salad & herbs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Dairy & eggs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Bakery counter</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Pantry staples</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Juices & drinks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-6 py-1.5 hover:text-[#7fad39] text-gray-700 transition-colors"
+                    >Weekly boxes</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+      
+          <div
+            class="flex-1 w-full border border-gray-200 flex items-center h-[52px]"
+          >
+
+            <div
+              class="hidden md:flex items-center justify-between px-4 w-[180px] font-bold text-gray-700 border-r border-gray-200 cursor-pointer h-full"
+            >
+              <span class="truncate">All categories</span>
+              <svg
+                class="w-3 h-3 text-gray-500 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+
+            
+            <input
+              type="text"
+              placeholder="What are you looking for?"
+              class="flex-1 px-5 h-full outline-none text-gray-500 placeholder-gray-400 text-sm"
+            />
+
+          
+            <button
+              class="bg-[#7fad39] text-white px-8 h-full font-bold tracking-wide uppercase hover:bg-[#6a932d] transition-colors"
+            >
+              SEARCH
+            </button>
+          </div>
+
+          
+          <div class="hidden lg:flex items-center gap-4 w-[220px]">
+            <div
+              class="w-12 h-12 rounded-full bg-[#f5f5f5] flex items-center justify-center text-[#7fad39]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <div class="font-bold text-gray-900 text-lg leading-tight">
+                +1 650 253 0000
+              </div>
+              <div class="text-xs text-gray-500 font-medium">Support 24/7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-9 py-6">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">   
+      <div class="lg:col-span-3 bg-stone-100 rounded-lg p-8 md:p-12 flex flex-col justify-center bg-cover bg-center min-h-[380px]" style="background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=1200&q=80');">
+        <span class="text-xs font-bold uppercase tracking-widest text-primary mb-2">Free Delivery Over $60</span>
+        <h1 class="text-3xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Fresh produce,<br>picked this morning</h1>
+        <p class="text-gray-600 text-sm max-w-md mb-6">Vegetables, fruit and pantry staples from farms within a day’s drive.</p>
+        <div>
+          <a href="#" class="inline-block bg-primary text-white font-bold text-xs uppercase tracking-wider px-7 py-3.5 rounded hover:bg-opacity-90 shadow">Shop The Market</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-y border-gray-100 my-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-4">
+        <i class="fa-solid fa-truck-fast text-3xl text-primary mb-3"></i>
+        <h4 class="font-bold text-gray-800 text-sm">Free delivery</h4>
+        <p class="text-xs text-gray-500 mt-1">On every order over $60</p>
+      </div>
+      <div class="p-4">
+        <i class="fa-solid fa-seedling text-3xl text-primary mb-3"></i>
+        <h4 class="font-bold text-gray-800 text-sm">Certified organic</h4>
+        <p class="text-xs text-gray-500 mt-1">Traceable to the farm</p>
+      </div>
+      <div class="p-4">
+        <i class="fa-solid fa-shield-halved text-3xl text-primary mb-3"></i>
+        <h4 class="font-bold text-gray-800 text-sm">Fresh guarantee</h4>
+        <p class="text-xs text-gray-500 mt-1">Not fresh? We refund it</p>
+      </div>
+      <div class="p-4">
+        <i class="fa-solid fa-headset text-3xl text-primary mb-3"></i>
+        <h4 class="font-bold text-gray-800 text-sm">Support 24/7</h4>
+        <p class="text-xs text-gray-500 mt-1">Talk to a real person</p>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="py-12 bg-white font-sans text-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    
+    <div class="mb-6">
+      <span class="text-xs font-bold tracking-wider text-green-600 uppercase">
+        Straight from the farm
+      </span>
+      <h2 class="text-3xl font-extrabold text-gray-900 mt-1">
+        Shop by department
+      </h2>
+    </div>
+
+    
+       
+  
+      <a href="#" class="snap-start shrink-0 w-44 sm:w-52 group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-square w-full overflow-hidden bg-gray-200">
+          <img 
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=400" 
+            alt="Vegetables" 
+            class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+          <span class="inline-block bg-white/90 backdrop-blur-md text-gray-900 font-bold px-4 py-1.5 rounded-full text-sm shadow transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
+            Vegetables
+          </span>
+        </div>
+      </a>
+
+      
+      <a href="#" class="snap-start shrink-0 w-44 sm:w-52 group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-square w-full overflow-hidden bg-gray-200">
+          <img 
+            src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&q=80&w=400" 
+            alt="Fruit" 
+            class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+          <span class="inline-block bg-white/90 backdrop-blur-md text-gray-900 font-bold px-4 py-1.5 rounded-full text-sm shadow transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
+            Fruit
+          </span>
+        </div>
+      </a>
+
+      
+      <a href="#" class="snap-start shrink-0 w-44 sm:w-52 group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-square w-full overflow-hidden bg-gray-200">
+          <img 
+            src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&q=80&w=400" 
+            alt="Berries" 
+            class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+          <span class="inline-block bg-white/90 backdrop-blur-md text-gray-900 font-bold px-4 py-1.5 rounded-full text-sm shadow transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
+            Berries
+          </span>
+        </div>
+      </a>
+
+      <a href="#" class="snap-start shrink-0 w-44 sm:w-52 group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-square w-full overflow-hidden bg-gray-200">
+          <img 
+            src="https://images.unsplash.com/photo-1528750997573-59b89d66f4f7?auto=format&fit=crop&q=80&w=400" 
+            alt="Dairy & Eggs" 
+            class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+          <span class="inline-block bg-white/90 backdrop-blur-md text-gray-900 font-bold px-4 py-1.5 rounded-full text-sm shadow transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
+            Dairy &amp; eggs
+          </span>
+        </div>
+      </a>
+
+      
+      <a href="#" class="snap-start shrink-0 w-44 sm:w-52 group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-square w-full overflow-hidden bg-gray-200">
+          <img 
+            src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400" 
+            alt="Pantry" 
+            class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+          <span class="inline-block bg-white/90 backdrop-blur-md text-gray-900 font-bold px-4 py-1.5 rounded-full text-sm shadow transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
+            Pantry
+          </span>
+        </div>
+      </a>
+
+      
+      <a href="#" class="snap-start shrink-0 w-44 sm:w-52 group relative overflow-hidden rounded-xl bg-gray-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+        <div class="aspect-square w-full overflow-hidden bg-gray-200">
+          <img 
+            src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400" 
+            alt="Weekly Boxes" 
+            class="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent"></div>
+        <div class="absolute bottom-0 inset-x-0 p-4 text-center">
+          <span class="inline-block bg-white/90 backdrop-blur-md text-gray-900 font-bold px-4 py-1.5 rounded-full text-sm shadow transition-colors duration-300 group-hover:bg-green-600 group-hover:text-white">
+            Weekly boxes
+          </span>
+        </div>
+      </a>
+
+    </div>
+  
+</section>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-900">Featured Products</h2>
+      <div class="w-16 h-1 bg-primary mx-auto mt-2 mb-6"></div>
+      
+    
+      <div class="flex justify-center space-x-6 text-sm font-medium text-gray-500">
+        <a href="#" class="text-primary font-bold border-b-2 border-primary pb-1">All</a>
+        <a href="#" class="hover:text-primary">Vegetables</a>
+        <a href="#" class="hover:text-primary">Fruit</a>
+        <a href="#" class="hover:text-primary">Weekly boxes</a>
+      </div>
+    </div>
+
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+    
+      <div class="border border-gray-100 rounded-lg overflow-hidden group hover:shadow-lg transition">
+        <div class="relative bg-gray-100 h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=500&q=80" alt="Vine-ripened tomatoes" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">SAVE 25%</span>
+        </div>
+        <div class="p-4 text-center">
+          <span class="text-[10px] uppercase font-bold text-gray-400">Bell Farm</span>
+          <h3 class="text-sm font-bold text-gray-800 mt-1">Vine-ripened tomatoes</h3>
+          <div class="text-yellow-400 text-xs my-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-gray-400 text-[10px] ml-1">(41)</span>
+          </div>
+          <div class="text-sm font-bold text-gray-900 mt-2">
+            $4.20 <span class="text-xs text-gray-400 line-through ml-1">$5.60</span> <span class="text-xs text-gray-400 font-normal">/ 500 g</span>
+          </div>
+          <button class="w-full mt-3 bg-gray-100 hover:bg-primary hover:text-white text-gray-700 text-xs font-bold py-2 rounded transition">
+            Add to Basket
+          </button>
+        </div>
+      </div>
+
+
+      <div class="border border-gray-100 rounded-lg overflow-hidden group hover:shadow-lg transition">
+        <div class="relative bg-gray-100 h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=500&q=80" alt="English strawberries" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+          <span class="absolute top-2 left-2 bg-green-600 text-white text-[10px] font-bold px-2 py-0.5 rounded">LOCAL</span>
+        </div>
+        <div class="p-4 text-center">
+          <span class="text-[10px] uppercase font-bold text-gray-400">Hillside Fruit</span>
+          <h3 class="text-sm font-bold text-gray-800 mt-1">English strawberries</h3>
+          <div class="text-yellow-400 text-xs my-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-gray-400 text-[10px] ml-1">(88)</span>
+          </div>
+          <div class="text-sm font-bold text-gray-900 mt-2">
+            $3.90 <span class="text-xs text-gray-400 font-normal">/ 400 g</span>
+          </div>
+          <button class="w-full mt-3 bg-gray-100 hover:bg-primary hover:text-white text-gray-700 text-xs font-bold py-2 rounded transition">
+            Add to Basket
+          </button>
+        </div>
+      </div>
+
+      
+      <div class="border border-gray-100 rounded-lg overflow-hidden group hover:shadow-lg transition">
+        <div class="relative bg-gray-100 h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=500&q=80" alt="Navel oranges" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        </div>
+        <div class="p-4 text-center">
+          <span class="text-[10px] uppercase font-bold text-gray-400">Sol Huerta</span>
+          <h3 class="text-sm font-bold text-gray-800 mt-1">Navel oranges</h3>
+          <div class="text-yellow-400 text-xs my-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            <span class="text-gray-400 text-[10px] ml-1">(27)</span>
+          </div>
+          <div class="text-sm font-bold text-gray-900 mt-2">
+            $2.80 <span class="text-xs text-gray-400 line-through ml-1">$3.50</span> <span class="text-xs text-gray-400 font-normal">/ 6 pack</span>
+          </div>
+          <button class="w-full mt-3 bg-gray-100 hover:bg-primary hover:text-white text-gray-700 text-xs font-bold py-2 rounded transition">
+            Add to Basket
+          </button>
+        </div>
+      </div>
+
+  
+      <div class="border border-gray-100 rounded-lg overflow-hidden group hover:shadow-lg transition">
+        <div class="relative bg-gray-100 h-48 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=80" alt="Russet apples" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+        </div>
+        <div class="p-4 text-center">
+          <span class="text-[10px] uppercase font-bold text-gray-400">Orchard Lane</span>
+          <h3 class="text-sm font-bold text-gray-800 mt-1">Russet apples</h3>
+          <div class="text-yellow-400 text-xs my-1">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <span class="text-gray-400 text-[10px] ml-1">(19)</span>
+          </div>
+          <div class="text-sm font-bold text-gray-900 mt-2">
+            $2.40 <span class="text-xs text-gray-400 font-normal">/ 1 kg</span>
+          </div>
+          <button class="w-full mt-3 bg-gray-100 hover:bg-primary hover:text-white text-gray-700 text-xs font-bold py-2 rounded transition">
+            Add to Basket
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="bg-amber-50 rounded-lg p-8 md:p-12 flex flex-col md:flex-row items-center justify-between">
+      <div class="max-w-md mb-6 md:mb-0">
+        <span class="text-xs font-bold uppercase tracking-widest text-primary">Deal of the week</span>
+        <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900 mt-1 mb-3">Seasonal vegetable basket</h2>
+        <p class="text-gray-600 text-xs leading-relaxed mb-4">Whatever the farms cut that morning, packed to a value rather than a fixed list. Expect eight to ten kinds.</p>
+        <div class="text-2xl font-bold text-gray-900 mb-6">$18.00 <span class="text-sm text-gray-400 line-through">$24.00</span></div>
+        <a href="#" class="inline-block bg-primary text-white font-bold text-xs uppercase tracking-wider px-6 py-3 rounded hover:bg-opacity-90">Add to Basket</a>
+      </div>
+      
+      
+      <div class="flex space-x-3 text-center">
+        <div class="bg-white rounded p-3 w-16 shadow-sm border border-amber-100">
+          <div class="text-lg font-bold text-gray-800">90</div>
+          <div class="text-[10px] text-gray-400 uppercase font-semibold">Days</div>
+        </div>
+        <div class="bg-white rounded p-3 w-16 shadow-sm border border-amber-100">
+          <div class="text-lg font-bold text-gray-800">11</div>
+          <div class="text-[10px] text-gray-400 uppercase font-semibold">Hrs</div>
+        </div>
+        <div class="bg-white rounded p-3 w-16 shadow-sm border border-amber-100">
+          <div class="text-lg font-bold text-gray-800">06</div>
+          <div class="text-[10px] text-gray-400 uppercase font-semibold">Min</div>
+        </div>
+        <div class="bg-white rounded p-3 w-16 shadow-sm border border-amber-100">
+          <div class="text-lg font-bold text-gray-800">31</div>
+          <div class="text-[10px] text-gray-400 uppercase font-semibold">Sec</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="text-center mb-8">
+      <h2 class="text-2xl font-bold text-gray-900">From the Kitchen</h2>
+      <div class="w-16 h-1 bg-primary mx-auto mt-2"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="space-y-2">
+        <div class="h-48 bg-gray-100 rounded overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Recipes · 4 September 2026</div>
+        <h3 class="font-bold text-gray-800 text-sm hover:text-primary"><a href="#">Six ways with a glut of tomatoes</a></h3>
+        <p class="text-xs text-gray-500 leading-relaxed">When the boxes arrive heavy for three weeks running, roasting is only the beginning.</p>
+      </div>
+
+      <div class="space-y-2">
+        <div class="h-48 bg-gray-100 rounded overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1508747703725-719777637510?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Sourcing · 28 August 2026</div>
+        <h3 class="font-bold text-gray-800 text-sm hover:text-primary"><a href="#">Why we stopped selling out-of-season asparagus</a></h3>
+        <p class="text-xs text-gray-500 leading-relaxed">It cost us a popular line and about four hundred orders a month. Here is the reasoning.</p>
+      </div>
+
+      <div class="space-y-2">
+        <div class="h-48 bg-gray-100 rounded overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover">
+        </div>
+        <div class="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Behind The Scenes · 19 August 2026</div>
+        <h3 class="font-bold text-gray-800 text-sm hover:text-primary"><a href="#">A morning on the packing line</a></h3>
+        <p class="text-xs text-gray-500 leading-relaxed">Four in the morning, eleven people and 900 boxes. What actually happens before a van leaves.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="bg-gray-50 py-12 my-10 border-t border-gray-100">
+    <div class="max-w-xl mx-auto px-4 text-center">
+      <h3 class="text-xl font-bold text-gray-800">Join the weekly list</h3>
+      <p class="text-xs text-gray-500 mt-1 mb-6">Seasonal produce, recipes and offers. One email a week, no more.</p>
+      <form class="flex" onsubmit="return false;">
+        <input type="email" placeholder="you@example.com" class="flex-1 px-4 py-3 text-sm border border-gray-300 rounded-l focus:outline-none">
+        <button class="bg-primary text-white text-xs font-bold px-6 py-3 uppercase tracking-wider rounded-r hover:bg-opacity-90">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+
+  <footer class="bg-stone-900 text-gray-400 text-xs py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h4 class="text-white font-bold text-lg mb-3">OGANI</h4>
+        <p class="leading-relaxed mb-3">Organic food & grocery. Everything within a day’s drive of the warehouse, bought from growers we have met.</p>
+        <p class="text-gray-500">128 Market Street, San Francisco, CA 94102<br>+1 650 253 0000</p>
+      </div>
+
+      <div>
+        <h5 class="text-white font-bold mb-3 uppercase tracking-wider">Shop</h5>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">All products</a></li>
+          <li><a href="#" class="hover:text-white">Weekly boxes</a></li>
+          <li><a href="#" class="hover:text-white">Shop the look</a></li>
+          <li><a href="#" class="hover:text-white">Wishlist</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-white font-bold mb-3 uppercase tracking-wider">Company</h5>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">About us</a></li>
+          <li><a href="#" class="hover:text-white">Our shops</a></li>
+          <li><a href="#" class="hover:text-white">Journal</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 class="text-white font-bold mb-3 uppercase tracking-wider">Help</h5>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:text-white">Help centre</a></li>
+          <li><a href="#" class="hover:text-white">Delivery & returns</a></li>
+          <li><a href="#" class="hover:text-white">Get in touch</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-stone-800 text-center text-gray-500">
+      © 2026 Ogani. A demo storefront.
+    </div>
+  </footer>
+  </body>
+</html>
